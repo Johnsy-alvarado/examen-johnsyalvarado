@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #fdf6e3; /* Beige suave */
+  color: #333;
+}
+
+header {
+  background: #1a4d8f; /* Azul principal */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+main {
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #1a4d8f; /* Azul */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input, select {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  background: #1a4d8f; /* Azul */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0f2f5e; /* Azul más oscuro */
+}
+
+footer {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  padding: 15px;
+  background: #f0e9d6; /* Beige más fuerte */
+  border-top: 1px solid #ddd;
+}
