@@ -14,7 +14,7 @@
   <main>
     <section class="card">
       <h2>Formulario de Venta</h2>
-      <form>
+      <form id="ventaForm">
         <label>Nombre del comprador
           <input type="text" name="comprador" required>
         </label>
@@ -39,7 +39,7 @@
 
     <section class="card">
       <h2>Formulario de Compra</h2>
-      <form>
+      <form id="compraForm">
         <label>Nombre del vendedor
           <input type="text" name="vendedor" required>
         </label>
@@ -58,7 +58,7 @@
 
     <section class="card">
       <h2>Formulario de Alquiler</h2>
-      <form>
+      <form id="alquilerForm">
         <label>Nombre del cliente
           <input type="text" name="cliente" required>
         </label>
@@ -78,5 +78,22 @@
       </form>
     </section>
   </main>
+
+  <script>
+    function validarForm(event, formName) {
+      event.preventDefault();
+      const form = document.getElementById(formName);
+      if (form.checkValidity()) {
+        alert("Formulario enviado correctamente!");
+        form.reset();
+      } else {
+        alert("Por favor, completa todos los campos correctamente.");
+      }
+    }
+
+    document.getElementById("ventaForm").addEventListener("submit", e => validarForm(e, "ventaForm"));
+    document.getElementById("compraForm").addEventListener("submit", e => validarForm(e, "compraForm"));
+    document.getElementById("alquilerForm").addEventListener("submit", e => validarForm(e, "alquilerForm"));
+  </script>
 </body>
 </html>
