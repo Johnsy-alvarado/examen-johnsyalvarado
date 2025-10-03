@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <title>Sistema Auto-Lote</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>Sistema Auto-Lote</h1>
+    <h1><i class="fa-solid fa-car"></i> Sistema Auto-Lote</h1>
     <p>Formularios de Venta, Compra y Alquiler de vehículos</p>
   </header>
 
   <main>
     <section class="card">
-      <h2>Formulario de Venta</h2>
+      <h2><i class="fa-solid fa-cart-plus"></i> Formulario de Venta</h2>
       <form id="ventaForm">
         <label>Nombre del comprador
           <input type="text" name="comprador" required>
@@ -33,12 +34,12 @@
         <label>Precio
           <input type="number" name="precio" required>
         </label>
-        <button type="submit">Guardar Venta</button>
+        <button type="submit"><i class="fa-solid fa-floppy-disk"></i> Guardar Venta</button>
       </form>
     </section>
 
     <section class="card">
-      <h2>Formulario de Compra</h2>
+      <h2><i class="fa-solid fa-hand-holding-dollar"></i> Formulario de Compra</h2>
       <form id="compraForm">
         <label>Nombre del vendedor
           <input type="text" name="vendedor" required>
@@ -52,12 +53,12 @@
         <label>Precio de compra
           <input type="number" name="precio" required>
         </label>
-        <button type="submit">Guardar Compra</button>
+        <button type="submit"><i class="fa-solid fa-floppy-disk"></i> Guardar Compra</button>
       </form>
     </section>
 
     <section class="card">
-      <h2>Formulario de Alquiler</h2>
+      <h2><i class="fa-solid fa-car-side"></i> Formulario de Alquiler</h2>
       <form id="alquilerForm">
         <label>Nombre del cliente
           <input type="text" name="cliente" required>
@@ -74,7 +75,7 @@
         <label>Fecha regreso
           <input type="date" name="regreso" required>
         </label>
-        <button type="submit">Guardar Alquiler</button>
+        <button type="submit"><i class="fa-solid fa-floppy-disk"></i> Guardar Alquiler</button>
       </form>
     </section>
   </main>
